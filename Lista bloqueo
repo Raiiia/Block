@@ -1,103 +1,131 @@
 # ===============================
-# WHITELIST GLOBAL – ADGUARD HOME
+# BLACKLIST GLOBAL – ADGUARD HOME
 # ===============================
 # Autor: César
-# Objetivo: Máxima privacidad sin romper servicios
+# Objetivo: Bloqueo de telemetría, ads y tracking
 # ===============================
 
-## AMAZON / ALEXA
-@@||amazonalexa.com^
-@@||alexa-comms-mobile-service.amazon.com^
-@@||avs-alexa.*.amazonaws.com^
-@@||kinesis.us-east-1.amazonaws.com^
-@@||device-metrics-us.amazon.com^
-@@||s3.amazonaws.com^
-@@||images-na.ssl-images-amazon.com^
-@@||ecx.images-amazon.com^
-@@||amazon.com^
-@@||amazon.com.mx^
 
-## IOT – TASMOTA
-@@||*.tasmota.com^
-@@||mqtt.^
-@@||mqtt.local^
+## ─────────────────────────────
+## GOOGLE – ADS / TRACKING
+## ─────────────────────────────
+||google-analytics.com^
+||analytics.google.com^
+||doubleclick.net^
+||pagead2.googlesyndication.com^
+||ads.google.com^
+||adservice.google.com^
+||adservice.google.com.mx^
+||adservice.google.es^
+||googleadservices.com^
+||googlesyndication.com^
+||firebase-settings.crashlytics.com^
+||app-measurement.com^
+||play.googleapis.com/log^
+||play.googleapis.com/collect^
 
-## IOT – TUYA
-@@||*.tuya.com^
-@@||*.tuyaeu.com^
-@@||*.tuyaus.com^
-@@||*.tuya-cn.com^
-@@||*.tuyaapis.com^
 
-## IOT – EWELINK / SONOFF
-@@||*.ewelink.cc^
-@@||*.coolkit.cc^
+## ─────────────────────────────
+## YOUTUBE – ADS / METRICS
+## ─────────────────────────────
+||ads.youtube.com^
+||youtube.com/api/stats/ads^
+||youtube.com/pagead^
+||youtube.com/ptracking^
+||youtube.com/youtubei/v1/ads^
 
-## IOT – TP-LINK TAPO
-@@||*.tplinkcloud.com^
-@@||*.tapo.com^
-@@||*.tp-link.com^
 
-## ANDROID – SERVICIOS ESENCIALES
-@@||android.clients.google.com^
-@@||play.googleapis.com^
-@@||firebaseinstallations.googleapis.com^
-@@||mtalk.google.com^
+## ─────────────────────────────
+## ANDROID – TRACKING GENERAL
+## ─────────────────────────────
+||android.clients.google.com/log^
+||mtalk.google.com/log^
+||firebaseinstallations.googleapis.com/log^
 
-## GOOGLE – YOUTUBE FUNCIONAL
-@@||youtube.com^
-@@||googlevideo.com^
-@@||i.ytimg.com^
-@@||yt3.ggpht.com^
 
-## MICROSOFT – WINDOWS
-@@||windowsupdate.com^
-@@||update.microsoft.com^
-@@||download.windowsupdate.com^
-@@||storeedgefd.dsx.mp.microsoft.com^
-@@||login.live.com^
-@@||microsoft.com^
-@@||windows.com^
+## ─────────────────────────────
+## MICROSOFT – TELEMETRÍA
+## ─────────────────────────────
+||vortex.data.microsoft.com^
+||telemetry.microsoft.com^
+||settings-win.data.microsoft.com^
+||watson.telemetry.microsoft.com^
+||oca.telemetry.microsoft.com^
+||sqm.microsoft.com^
+||diagnostics.support.microsoft.com^
 
-## STREAMING – NETFLIX / DISNEY
-@@||netflix.com^
-@@||nflxvideo.net^
-@@||logs.netflix.com^
-@@||disneyplus.com^
-@@||disney.my.sentry.io^
-@@||d3p8zr0ffa9t17.cloudfront.net^
 
-## STREAMING – CRUNCHYROLL
-@@||crunchyroll.com^
-@@||vrv.co^
+## ─────────────────────────────
+## AMAZON – ADS / TRACKING
+## (Fire TV / Alexa ads)
+## ─────────────────────────────
+||adsystem.amazon.com^
+||s.amazon-adsystem.com^
+||fireos-analytics.amazon.com^
+||device-metrics-us.amazon.com^
+||fls-na.amazon.com^
 
-## ROKU – FUNCIONALIDAD BÁSICA
-@@||captive.roku.com^
-@@||api.roku.com^
 
-## AMAZON FIRE TV
-@@||fls-na.amazon.com^
-@@||api.amazonvideo.com^
-@@||atv-ext.amazon.com^
+## ─────────────────────────────
+## ROKU – PUBLICIDAD
+## ─────────────────────────────
+||ads.roku.com^
+||logs.roku.com^
+||tracking.roku.com^
+||scribe.roku.com^
 
-## CLOUDFLARE / DOMINIO PROPIO
-@@||cloudflare.com^
-@@||*.cloudflare.com^
-@@||rajapakse.uk^
-@@||*.rajapakse.uk^
 
-## GITHUB / DESARROLLO
-@@||github.com^
-@@||raw.githubusercontent.com^
-@@||api.github.com^
+## ─────────────────────────────
+## XIAOMI / POCO – ADS / TRACKING
+## ─────────────────────────────
+||tracking.miui.com^
+||data.mistat.xiaomi.com^
+||analytics.mi.com^
+||ads.mistat.xiaomi.com^
+||sa.api.intl.miui.com^
 
-## EDUCACIÓN / TRÁMITES MX
-@@||cedulaprofesional.sep.gob.mx^
-@@||occ.com.mx^
-@@||indeed.com^
-@@||t.indeed.com^
-@@||doctoralia.com.mx^
+
+## ─────────────────────────────
+## HUAWEI – TELEMETRÍA
+## ─────────────────────────────
+||metrics.data.hicloud.com^
+||logservice.hicloud.com^
+||tracking.huawei.com^
+||ads.huawei.com^
+
+
+## ─────────────────────────────
+## SAMSUNG – ADS / TRACKING
+## ─────────────────────────────
+||samsungads.com^
+||config.samsungads.com^
+||analytics.samsung.com^
+||log-ingestion.samsungacr.com^
+||samsungacr.com^
+
+
+## ─────────────────────────────
+## META (FACEBOOK / INSTAGRAM)
+## ─────────────────────────────
+||facebook.com/tr^
+||connect.facebook.net^
+||graph.facebook.com/log^
+||analytics.facebook.com^
+
+
+## ─────────────────────────────
+## GENERAL – TRACKERS COMUNES
+## ─────────────────────────────
+||scorecardresearch.com^
+||quantserve.com^
+||crashlytics.com^
+||branch.io^
+||adjust.com^
+||appsflyer.com^
+||mixpanel.com^
+||segment.io^
+
 
 # ===============================
-# FIN
+# FIN DE BLACKLIST
 # ===============================
